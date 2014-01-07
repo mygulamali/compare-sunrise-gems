@@ -4,6 +4,7 @@ GEM
     RubySunrise (0.3)
       tzinfo
     atomic (1.1.14)
+    rake (10.1.0)
     ruby-sun-times (0.1.5)
     sun_time (0.0.2)
     sunriseset (0.9.1)
@@ -17,6 +18,7 @@ PLATFORMS
 
 DEPENDENCIES
   RubySunrise
+  rake
   ruby-sun-times
   sun_time
   sunriseset
