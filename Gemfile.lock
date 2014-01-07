@@ -9,7 +9,6 @@ GEM
       pay_dirt
     pay_dirt (1.0.8)
     ruby-sun-times (0.1.5)
-    sun-times (1.0.0)
     sun_time (0.0.2)
     sunriseset (0.9.1)
     sunrset (0.0.4)
@@ -30,7 +29,6 @@ DEPENDENCIES
   RubySunrise
   horizon_event
   ruby-sun-times
-  sun-times
   sun_time
   sunriseset
   sunrset
