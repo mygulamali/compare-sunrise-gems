@@ -5,7 +5,10 @@ def usno_data_filename
 end
 
 def csv_errors_filename
-  "./data/2013-usno-data-errors.csv"
+  extension = File.extname(usno_data_filename)
+  basename = File.basename(usno_data_filename, extension)
+  dirname = File.dirname(usno_data_filename)
+  File.join(dirname, "#{basename}-errors.csv")
 end
 
 task :default => :compare
