@@ -4,18 +4,13 @@ GEM
     RubySunrise (0.3)
       tzinfo
     atomic (1.1.14)
-    geocoder (1.1.9)
     ruby-sun-times (0.1.5)
     sun_time (0.0.2)
     sunriseset (0.9.1)
-    sunweather (0.3.8)
-      geocoder
-      xml-simple
     thread_safe (0.1.3)
       atomic
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
-    xml-simple (1.1.3)
 
 PLATFORMS
   ruby
@@ -25,4 +20,3 @@ DEPENDENCIES
   ruby-sun-times
   sun_time
   sunriseset
-  sunweather
