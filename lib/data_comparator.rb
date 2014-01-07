@@ -69,15 +69,16 @@ class DataComparator
   def calculate_errors_between(expected_data_key, observed_data_key)
     data_errors = []
 
-    loop do
-      expected_data = data[expected_data_key].next rescue :eof
-      observed_data = data[observed_data_key].next rescue :eof
-      return data_errors if expected_data == :eof
+    data[expected_data_key].each_index do |i|
+      expected_data = data[expected_data_key][i]
+      observed_data = data[observed_data_key][i]
       data_errors << {
         rise: error(expected_data[:rise], observed_data[:rise]),
         set: error(expected_data[:set], observed_data[:set])
       }
     end
+
+    data_errors
   end
 
   def error(expected_datetime, observed_datetime)
