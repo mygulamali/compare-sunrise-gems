@@ -5,9 +5,6 @@ GEM
       tzinfo
     atomic (1.1.14)
     geocoder (1.1.9)
-    horizon_event (0.0.1)
-      pay_dirt
-    pay_dirt (1.0.8)
     ruby-sun-times (0.1.5)
     sun_time (0.0.2)
     sunriseset (0.9.1)
@@ -27,7 +24,6 @@ PLATFORMS
 
 DEPENDENCIES
   RubySunrise
-  horizon_event
   ruby-sun-times
   sun_time
   sunriseset
