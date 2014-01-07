@@ -66,7 +66,7 @@ class DataComparator
 
   private
 
-  def calculate(expected_data_key, observed_data_key)
+  def calculate_errors_between(expected_data_key, observed_data_key)
     data_errors = []
 
     loop do
