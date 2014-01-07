@@ -31,7 +31,6 @@ GEM
       atomic
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
-    when_sun (1.0.1)
     xml-simple (1.1.3)
 
 PLATFORMS
@@ -47,4 +46,3 @@ DEPENDENCIES
   sunriseset
   sunrset
   sunweather
-  when_sun
