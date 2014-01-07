@@ -8,8 +8,6 @@ GEM
     ruby-sun-times (0.1.5)
     sun_time (0.0.2)
     sunriseset (0.9.1)
-    sunrset (0.0.4)
-      xml-simple
     sunweather (0.3.8)
       geocoder
       xml-simple
@@ -27,5 +25,4 @@ DEPENDENCIES
   ruby-sun-times
   sun_time
   sunriseset
-  sunrset
   sunweather
