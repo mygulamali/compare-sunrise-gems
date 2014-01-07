@@ -2,7 +2,7 @@ require 'csv'
 require_relative 'solareventcalculator_data'
 require_relative 'sun_time_data'
 require_relative 'sun_times_data'
-require_relative 'sunriseset_data'
+#require_relative 'sunriseset_data'
 require_relative 'usno_data'
 
 class DataComparator
@@ -24,14 +24,14 @@ class DataComparator
     @data[:solareventcalculator] = SolarEventCalculatorData.new(year, lat, lng).calculate
     @data[:sun_time] = SunTimeData.new(year, lat, lng).calculate
     @data[:sun_times] = SunTimesData.new(year, lat, lng).calculate
-    @data[:sunriseset] = SunRiseSetData.new(year, lat, lng).calculate
+    #@data[:sunriseset] = SunRiseSetData.new(year, lat, lng).calculate
   end
 
   def calculate_errors
     @errors[:solareventcalculator] = calculate_errors_between(:usno, :solareventcalculator)
     @errors[:sun_time] = calculate_errors_between(:usno, :sun_time)
     @errors[:sun_times] = calculate_errors_between(:usno, :sun_times)
-    @errors[:sunriseset] = calculate_errors_between(:usno, :sunriseset)
+    #@errors[:sunriseset] = calculate_errors_between(:usno, :sunriseset)
   end
 
   def output_errors(csv_filename)
@@ -44,8 +44,8 @@ class DataComparator
         "sun_time set [min]",
         "sun_times rise [min]",
         "sun_times set [min]",
-        "sunriseset rise [min]",
-        "sunriseset set [min]",
+#        "sunriseset rise [min]",
+#        "sunriseset set [min]",
       ]
 
       data[:usno].each_index do |i|
@@ -57,8 +57,8 @@ class DataComparator
           errors[:sun_time][i][:set],
           errors[:sun_times][i][:rise],
           errors[:sun_times][i][:set],
-          errors[:sunriseset][i][:rise],
-          errors[:sunriseset][i][:set],
+ #         errors[:sunriseset][i][:rise],
+ #         errors[:sunriseset][i][:set],
         ]
       end
     end
